@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Test Api Rest</title>
+    <link rel="stylesheet" href="./lib/fonts/css/all.min.css">
+    <link rel="stylesheet" href="./lib/fonts/Roboto.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Full-Test Api Rest</h1>
+        <div class="content" id="content">
+            <div class="alert-message">
+                <p>no nos pudimos conectar a la bd</p>
+            </div>
+        </div>
+        <nav class="pagination">
+            <ul class="list-pagination">
+                <li class="page-item previous">
+                    <a href="#" class="page-link" id="btn-previous"><i class="fas fa-angle-double-left"></i></a>
+                </li>
+                <span id="content-pages">
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                </span>
+                <li class="page-item next">
+                    <a href="#" class="page-link" id="btn-next"><i class="fas fa-angle-double-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <template id="template-card">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Api de prueba</h2>
+                </div>
+                <div class="card-body">
+                    <p>Esta es una api de prueba</p>
+                    <hr>
+                    <div class="info-row">
+                        <p class="col-md-4">
+                            <i class="fas fa-folder"></i>
+                            <span id="folders-count">0</span>
+                        </p>
+                        <p class="col-md-4">
+                            <i class="fas fa-scroll"></i>
+                            <span id="tests-count">0</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-lightblue" id="btn-details">
+                        <i class="fas fa-info-circle"></i>
+                        Detalles
+                    </button>
+                    <button class="btn btn-red" id="btn-delete">
+                        <i class="fas fa-times"></i>
+                        Eliminar
+                    </button>
+                </div>
+            </div>
+        </template>
+    </div>
+</body>
+</html>

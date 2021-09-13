@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectarse a la BD</title>
+    <link rel="stylesheet" href="./lib/fonts/css/all.min.css">
+    <link rel="stylesheet" href="./lib/fonts/Roboto.css">
+</head>
+<body>
+    <form class="form-connect" id="form-connect">
+        <h1>Conectarse a la BD</h1>
+        <div class="form-group">
+            <label class="form-label">Servidor:</label>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" name="host" class="form-input input-server" id="input-host" placeholder="Servidor" autofocus>
+                    <p class="alert-input" id="alert-host">Debe escribir el host de su base de datos</p>
+                </div>
+                <p class="separator-server">:</p>
+                <div class="input-group">
+                    <input type="text" name="port" class="form-input input-server" id="input-port" placeholder="Puerto">
+                    <p class="alert-input" id="alert-host">Debe escribir el puerto correspondiente</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
