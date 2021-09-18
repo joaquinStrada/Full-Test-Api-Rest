@@ -45,7 +45,7 @@ const createConnection = async () => {
             console.error(err.message || 'No nos pudimos conectar a la BD');
             db = {
                 error: true,
-                message: 'No nos pudimos conectar a la BD'
+                message: err.message || 'No nos pudimos conectar a la BD'
             };
         }
     }

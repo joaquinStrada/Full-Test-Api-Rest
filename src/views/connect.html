@@ -7,24 +7,65 @@
     <title>Conectarse a la BD</title>
     <link rel="stylesheet" href="./lib/fonts/css/all.min.css">
     <link rel="stylesheet" href="./lib/fonts/Roboto.css">
+    <link rel="stylesheet" href="./css/connect.css">
 </head>
 <body>
     <form class="form-connect" id="form-connect">
         <h1>Conectarse a la BD</h1>
+        <div class="alert-form" id="alert-form">
+            Porfavor Rellene todos los campos
+        </div>
         <div class="form-group">
             <label class="form-label">Servidor:</label>
-            <div class="row">
+            <div class="row-host">
                 <div class="input-group">
                     <input type="text" name="host" class="form-input input-server" id="input-host" placeholder="Servidor" autofocus>
-                    <p class="alert-input" id="alert-host">Debe escribir el host de su base de datos</p>
+                    <p class="alert-input" id="alert-host">Debe escribir el host de la base de datos</p>
                 </div>
                 <p class="separator-server">:</p>
                 <div class="input-group">
                     <input type="text" name="port" class="form-input input-server" id="input-port" placeholder="Puerto">
-                    <p class="alert-input" id="alert-host">Debe escribir el puerto correspondiente</p>
+                    <p class="alert-input" id="alert-port">Debe escribir el puerto correspondiente</p>
                 </div>
             </div>
         </div>
+        <div class="form-group">
+            <label for="input-user" class="form-label">Usuario:</label>
+            <div class="input-group">
+                <input type="text" name="user" class="form-control" id="input-user" placeholder="Usuario">
+                <p class="alert-input" id="alert-user">Debe escribir el usuario de la base de datos</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-pass" class="form-label">Contraseña:</label>
+            <div class="input-group">
+                <input type="password" name="pass" class="form-control" id="input-pass" placeholder="Contraseña">
+                <p class="alert-input" id="alert-pass">Debe escribir la contraseña de la base de datos</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-database" class="form-label">Base de datos:</label>
+            <div class="input-group">
+                <input type="text" name="database" class="form-control" id="input-database" placeholder="Base de datos">
+                <p class="alert-input" id="alert-database">Debe escribir el nombre de la base de datos</p>
+            </div>
+        </div>
+        <div class="form-controls">
+            <button type="submit" class="btn btn-save">
+                <i class="fas fa-save"></i>
+                Guardar
+            </button>
+            <button type="button" class="btn btn-test" id="btn-test">
+                <i class="fas fa-scroll"></i>
+                Probar Conexion
+            </button>
+            <button type="button" class="btn btn-cancel" id="btn-cancel">
+                <i class="fas fa-times"></i>
+                Cancelar
+            </button>
+        </div>
     </form>
+
+    <script src="./js/connect/main.js" type="module"></script>
 </body>
 </html>
