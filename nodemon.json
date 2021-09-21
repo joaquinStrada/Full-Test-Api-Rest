@@ -3,6 +3,8 @@
         "src"
     ],
     "ext": "js,mjs,json",
-    "ignore": [],
+    "ignore": [
+        "src/views"
+    ],
     "exec": "npm start"
 }

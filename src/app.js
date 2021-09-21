@@ -1,6 +1,7 @@
 const { app } = require('electron');
 const { controller: mainController } = require('./controllers/mainWindow.controller.js');
 const { controller: connectController } = require('./controllers/connectWindow.controller.js');
+const { controller: addApiController } = require('./controllers/addApiWindow.controller.js');
 const { createConnection } = require('./lib/database.js');
 createConnection();
 
@@ -19,6 +20,13 @@ const templateMenu = [
     {
         label: 'Archivo',
         submenu: [
+            {
+                label: 'Agregar Api',
+                accelerator: process.platform == 'darwin' ? 'command+N' : 'Ctrl+N',
+                click() {
+                    addApiController(app);
+                }
+            },
             {
                 label: 'Conectarse a la BD',
                 click() {

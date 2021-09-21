@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Api</title>
+    <link rel="stylesheet" href="./lib/fonts/css/all.min.css">
+    <link rel="stylesheet" href="./lib/fonts/Roboto.css">
+    <link rel="stylesheet" href="./css/addApi.css">
+</head>
+
+<body>
+    <form class="form-add" id="form-add">
+        <h1>Agregar Api</h1>
+        <div class="alert-form" id="alert-form">
+            Porfavor Rellene todos los campos
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="form-label">Nombre:</label>
+            <div class="input-group">
+                <input type="text" name="name" class="form-control" id="input-name" placeholder="Nombre">
+                <p class="alert-input" id="alert-name">El nombre tiene que ser de 4 a 50 caracteres</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-description" class="form-label">Nombre:</label>
+            <div class="input-group">
+                <textarea name="description" id="input-description" class="form-control" cols="0" rows="2"
+                    placeholder="Descripcion"></textarea>
+                <p class="alert-input" id="alert-description">El descripcion tiene que ser de 4 a 400 caracteres</p>
+            </div>
+        </div>
+        <div class="form-controls">
+            <button type="submit" class="btn btn-save">
+                <i class="fas fa-plus"></i>
+                Agregar Api
+            </button>
+        </div>
+    </form>
+
+    <script src="./js/addApi/main.js" type="module"></script>
+</body>
+
+</html>
